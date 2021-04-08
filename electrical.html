@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>平价家电</title>
+<style type="text/css">
+@import url("css/bootstrap.css");
+@import url("css/Mycss.css");
+@import url("css/Mycss3.css");
+</style>
+<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
+<body data-target="#selector" data-spy="scrooll">
+    <nav class="navbar navbar-fixed-top nav-bg">
+         	<div class="container-fluid">
+            	<div class="row">
+                	<div class="col-md-1">
+                   	  <div class="navbar-header">
+                       	<button class="navbar-toggle nav-bg2" data-toggle="collapse" data-target="#myNavbar">
+                            	<span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                                
+                            </button>
+                          <a class="navbar-brand"><img src="img/loge.jpg" class="img-responsive" width="90px"/></a>
+                        </div>
+                    </div>
+                    <div class="col-md-11">
+                    	<div id="myNavbar" class="collapse navbar-collapse row">
+                        	<div class="col-md-7">
+                            	<ul class="nav navbar nav-justified nav-wezi">
+                                	<li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                                    <li><a href="brand.html">品牌闪购</a></li>
+                                    <li><a href="electrical.html">平价家电</a></li>
+                                    <li><a href="#">主题超市</a></li>
+                                    <li><a href="#">热点资讯</a></li>
+                                    <li class="dropdown">                               
+                                      <a class="dropdown-toggle" data-toggle="dropdown">更多
+                                        <span class="caret"></span>
+                                      </a>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#">联系我们</a></li>
+                                        <li><a href="#">在线客服</a></li>
+                                        <li><a href="#">加入会员</a></li>
+                                      </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 hidden-sm hidden-xs nav-top">
+								<div class="input-group">
+                                	<input type="text" class="form-control">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button">搜索</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-2 hidden-sm hidden-xs nav-top">
+                            	<button class="btn btn-primary" data-toggle="modal" data-target="#mymodal">登录</button>
+                        		<button class="btn btn-primary" >注册</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </nav>
+           
+        <div id="mymodal" class="modal fade" dtaa-backdrop="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">登录买买买账号</h4>
+                    </div>
+                    <div class="media-body">
+                        <form action="#">
+                            <div  class="myMP col-md-10 col-md-offset-1">
+                                <input class="form-control" type="text" placeholder="手机/邮箱/用户名"/>
+                            </div>
+                            <div class="myMP col-md-10 col-md-offset-1">
+                                <input class="form-control" type="text" placeholder="密码"/>
+                            </div>
+                            <div class="myMP col-md-10 col-md-offset-1">
+                                <input type="checkbox" />下次自动登录
+                            </div>
+                            <div class="myB col-md-12">
+                                <input class="btn btn-primary form-control" type="submit" value="登录"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
+         </div>
+         
+         <div class="row hidden-sm hidden-xs">
+         	<div class="pjjd-dh">
+            	<ul class="nav nav-stacked" id="selector">
+                	<li class="active"><a href="#name1">家电风暴</a></li>
+                    <li><a href="#name2">商品预告</a></li>
+                    <li><a href="#name3">主题活动</a></li>
+                    <li><a href="#name4">家用家电</a></li>
+                    <li><a href="#name5">去到底层</a></li>
+                </ul>
+            </div>
+            <div class="col-md-10 col-md-offset-1 pjjd-zuo" id="name1">
+            	<div class="pjjd-zuo-top"><img src="img/1.4.png"/></div>
+                <div class="pjjd-zuo-xia">
+                	<div class="pjjd-zuo-xia-kuang">
+                    	<div class="pjjd-zuo-xia-xk">
+                        	<div class="xk-top"><img src="img/7.1.jpg"/></div>
+                            <div class="xk-xia">
+                            	<div class="xk-xia-wz1 text-center">厨卫精选</div>
+                                <div class="xk-xia-wz2 text-center">万台半价抢</div>
+                            </div>
+                      	</div>
+                        <div class="pjjd-zuo-xia-xk">
+                        	<div class="xk-top"><img src="img/7.2.jpg"/></div>
+                            <div class="xk-xia">
+                            	<div class="xk-xia-wz1 text-center"> 电脑数码</div>
+                                <div class="xk-xia-wz2 text-center">至高24期免息</div>
+                            </div>
+                        </div>
+                        <div class="pjjd-zuo-xia-xk">
+                        	<div class="xk-top"><img src="img/7.3.jpg"/></div>
+                            <div class="xk-xia">
+                            	<div class="xk-xia-wz1 text-center"> 电视家影</div>
+                                <div class="xk-xia-wz2 text-center">至高24期免息</div>
+                            </div>
+                        </div>
+                        <div class="pjjd-zuo-xia-xk">
+                        	<div class="xk-top"><img src="img/7.4.jpg"/></div>
+                            <div class="xk-xia">
+                            	<div class="xk-xia-wz1 text-center"> 集成家电</div>
+                                <div class="xk-xia-wz2 text-center">爆款送冰柜</div>
+                            </div>
+                        </div>
+                        <div class="pjjd-zuo-xia-xk">
+                        	<div class="xk-top"><img src="img/7.5.jpg"/></div>
+                            <div class="xk-xia">
+                            	<div class="xk-xia-wz1 text-center"> 生活家电</div>
+                                <div class="xk-xia-wz2 text-center">爆款五折抢</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pjjd-zuo-xia-kuang">
+                    
+                    	<div class="pjjd-zuo-xia-xk">
+                        	<div class="xk-top"><img src="img/7.6.jpg"/></div>
+                            <div class="xk-xia">
+                            	<div class="xk-xia-wz1 text-center"> 手机通讯</div>
+                                <div class="xk-xia-wz2 text-center">抢2020元大额券</div>
+                            </div>
+                      	</div>
+                        <div class="pjjd-zuo-xia-xk">
+                        	<div class="xk-top"><img src="img/7.7.jpg"/></div>
+                            <div class="xk-xia">
+                            	<div class="xk-xia-wz1 text-center"> 冰箱洗衣机</div>
+                                <div class="xk-xia-wz2 text-center">每1000减100</div>
+                            </div>
+                        </div>
+                        <div class="pjjd-zuo-xia-xk">
+                        	<div class="xk-top"><img src="img/7.8.jpg"/></div>
+                            <div class="xk-xia">
+                            	<div class="xk-xia-wz1 text-center">洁净洗护</div>
+                                <div class="xk-xia-wz2 text-center">滚筒低至999元</div>
+                            </div>
+                        </div>
+                        <div class="pjjd-zuo-xia-xk">
+                        	<div class="xk-top"><img src="img/7.9.jpg"/></div>
+                            <div class="xk-xia">
+                            	<div class="xk-xia-wz1 text-center">爆款清单</div>
+                                <div class="xk-xia-wz2 text-center">55英寸低至1399</div>
+                            </div>
+                        </div>
+                        <div class="pjjd-zuo-xia-xk">
+                        	<div class="xk-top"><img src="img/7.10.jpg"/></div>
+                            <div class="xk-xia">
+                            	<div class="xk-xia-wz1 text-center">净水饮水</div>
+                                <div class="xk-xia-wz2 text-center">下单好礼赠不停</div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+         </div>
+         
+         <div class="row"  id="name2">
+          <div class="col-md-10 col-md-push-1 spyg-zq">
+             <div class="spyg-xian"></div>
+             <div class="spyg-zhong-wz text-center">商品预告</div>
+             <div class="spyg-xian"></div>
+          </div>
+        </div>
+         
+         <div class="row">
+         	<div class="col-md-10 col-md-offset-1 spyg container-fluid">
+				<ul class="list-group">
+                	<li class="list-group-item">2020/6/17<span class="label label-danger">售完!</span></li>                    
+                    <li class="list-group-item" data-toggle="collapse" href="#div1">2020/6/18
+                    <span class="label label-warning">即将上线!</span><span class="badge">3</span></li>
+                      <div id="div1" class="row text-center collapse in">
+                        <div class="col-md-4 col-xs-12">
+                            <div class="thumbnail"> 
+                                <img src="img/7.11.jpg"> 
+                                <p>飞利浦(PHILIPS）电话机</p>
+                                <div class="spyg-wz text-left">￥35.9<span>￥75.9</span><i>4.7折</i></div>                                 
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="thumbnail">
+                                  <img src="img/7.12.jpg"> 
+                                  <p>艾美特（Airmate）电风扇</p>
+                                  <div class="spyg-wz text-left">￥169<span>￥269</span><i>6折</i></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="thumbnail">
+                                 <img src="img/7.13.jpg"> 
+                                 <p>欧井（Eurgeen）除湿机</p>
+                                 <div class="spyg-wz text-left">￥1599<span>￥2099</span><i>7折</i></div>
+                            </div>
+                         </div>
+                     </div> 
+                     
+                     <li class="list-group-item" data-toggle="collapse" href="#div2">2020/6/19
+                     <span class="label label-success">待售!</span><span class="badge">2</span></li>
+                     	<div id="div2" class="row text-center collapse">
+                            <div class="col-md-6 col-xs-12">
+                                <div class="thumbnail"> 
+                                    <img src="img/7.14.jpg"> 
+                                    <p>戴森（Dyson）无叶电风扇</p>
+                                    <div class="spyg-wz text-left">￥4290<span>￥4590</span><i>直降300元</i></div>                                 
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="thumbnail">
+                                      <img src="img/7.15.jpg"> 
+                                      <p>格力空调扇</p>
+                                      <div class="spyg-wz text-left">￥469<span>￥569</span><i>8折</i></div>
+                                </div>
+                            </div>
+                       </div>  
+                     
+                     <li class="list-group-item" data-toggle="collapse" href="#div3">2020/6/20
+                     <span class="label label-success">待售!</span><span class="badge">4</span></li>
+                      <div id="div3" class="row text-center collapse">
+                        <div class="col-md-3 col-xs-12">
+                            <div class="thumbnail"> 
+                                <img src="img/7.17.jpg"> 
+                                <p>莱克（LEXY）吸尘器</p>
+                                <div class="spyg-wz text-left">￥1999</i></div>                                 
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12">
+                            <div class="thumbnail">
+                                  <img src="img/7.16.jpg"> 
+                                  <p>皓庭 家用壁挂式新风机</p>
+                                  <div class="spyg-wz text-left">￥4989</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12">
+                            <div class="thumbnail">
+                                 <img src="img/7.18.jpg"> 
+                                 <p>德尔玛 Deerma 加湿器</p>
+                                 <div class="spyg-wz text-left">99<span>￥198</span><i>5折</i></div>
+                            </div>
+                         </div>
+                         <div class="col-md-3 col-xs-12">
+                            <div class="thumbnail">
+                                  <img src="img/7.19.jpg"> 
+                                  <p>艾美特（Airmate）电风扇</p>
+                                  <div class="spyg-wz text-left">￥679<span>￥900</span><i>7.5折</i></div>
+                            </div>
+                        </div>
+                     </div>
+                     
+                </ul>                    
+            </div>
+         </div>
+         
+         
+         	<div class="row" id="name3">
+              <div class="col-md-10 col-md-push-1 spyg-zq">
+                 <div class="spyg-xian"></div>
+                 <div class="spyg-zhong-wz text-center">主题活动</div>
+                 <div class="spyg-xian"></div>
+              </div>
+            </div> 
+                    
+          <div class="row">
+         	<div class="col-md-10 col-md-offset-1 zthd">
+           	  <div class="zthd-kuang col-md-4 col-sm-12 col-xs-12">
+                	<div class="zthd-zuo1">
+                    	<div class="zthd-zuo-top">数码潮品惠</div>
+                        <ul class="nav nav-stacked zthd-zuo-zhong">
+                        	<li>手机</li>
+                            <li>配件秒杀</li>
+                            <li>性价笔记本</li>
+                            <li>大牌硬盘</li>
+                            <li>OA办公设备</li>
+                            <li>单反相机</li>
+                        </ul>
+                        <div class="zthd-zuo-xia">“潮”品生活</div>
+                    </div>
+                    <div class="zthd-you"><img src="img/8.1.jpg"/></div>
+                </div>                
+                <div class="zthd-kuang  col-md-4 col-sm-12 col-xs-12">
+                	<div class="zthd-zuo2">
+                    	<div class="zthd-zuo-top">大牌精选</div>
+                        <ul class="nav nav-stacked zthd-zuo-zhong">
+                        	<li>华为荣耀V8</li>
+                            <li>自拍神器</li>
+                            <li>索尼微单</li>
+                            <li>苹果</li>
+                            <li>无线上网</li>
+                            <li>百年名笔派克</li>
+                        </ul>
+                        <div class="zthd-zuo-xia">高端品位</div>
+                    </div>
+                    <div class="zthd-you"><img src="img/8.2.jpg"/></div>
+                </div>
+                
+                <div class="zthd-kuang  col-md-4 col-sm-12 col-xs-12">
+                	<div class="zthd-zuo3">
+                    	<div class="zthd-zuo-top">数码潮品惠</div>
+                        <ul class="nav nav-stacked zthd-zuo-zhong">
+                        	<li>常盐道热敷包</li>
+                            <li>Foero洁面仪</li>
+                            <li>荣事达养生壶</li>
+                            <li>Ergo Chef</li>
+                            <li>美的电器</li>
+                            <li>九阳豆浆机</li>
+                        </ul>
+                        <div class="zthd-zuo-xia">品质生活</div>
+                    </div>
+                    <div class="zthd-you"><img src="img/8.3.jpg"/></div>
+                </div>                
+            </div>
+         </div>
+         
+         <div class="row"  id="name4">
+          <div class="col-md-10 col-md-push-1 spyg-zq">
+             <div class="spyg-xian"></div>
+             <div class="spyg-zhong-wz text-center">家用电器</div>
+             <div class="spyg-xian"></div>
+          </div>
+        </div>
+        
+        <div class="row">
+          	<div class="col-md-10 col-md-push-1 jydq">
+            	<div class="col-md-2 hidden-xs hidden-sm jydq-tuh"><img src="img/9.1.jpg"/></div>
+                <div class="col-md-2">
+                	<div class="thumbnail">
+                         <p class="jydq-wz1">电视家影</p>
+                         <p class="jydq-wz2">爆款直降1000</p>
+                         <img src="img/9.3.jpg" class="img-responsive"/>
+                         <p class="jydq-wz1"> 科龙送清凉</p>
+                         <p class="jydq-wz2">新品0元试用</p>
+                         <img src="img/9.4.jpg" class="img-responsive"/> 
+                    </div>                    
+                </div>
+                <div class="col-md-2">
+                	<div class="thumbnail">
+                         <p class="jydq-wz1"> 保鲜好冰箱</p>
+                         <p class="jydq-wz2">风冷对开低至1999</p>
+                         <img src="img/9.5.jpg" class="img-responsive"/>
+                         <p class="jydq-wz1"> 苏宁精选特惠</p>
+                         <p class="jydq-wz2">内胆8年免费换新</p>
+                         <img src="img/9.6.jpg" class="img-responsive"/> 
+                    </div>
+                </div>
+                <div class="col-md-2 hidden-xs hidden-sm jydq-tuh"><img src="img/9.2.jpg"/></div>
+                <div class="col-md-2">
+                	<div class="thumbnail">
+                         <p class="jydq-wz1">美的热水器</p>
+                         <p class="jydq-wz2">爆款六折抢</p>
+                         <img src="img/9.9.jpg" class="img-responsive"/>
+                         <p class="jydq-wz1"> 小米电视</p>
+                         <p class="jydq-wz2">爆款直降千元</p>
+                         <img src="img/9.10.jpg" class="img-responsive"/> 
+                    </div>
+                </div>
+                <div class="col-md-2">
+                	<div class="thumbnail">
+                         <p class="jydq-wz1"> 美的大牌狂欢购</p>
+                         <p class="jydq-wz2">套购劲省500</p>
+                         <img src="img/9.7.jpg" class="img-responsive"/>
+                         <p class="jydq-wz1"> 洁净洗护</p>
+                         <p class="jydq-wz2">滚筒低至999元</p>
+                         <img src="img/9.8.jpg" class="img-responsive"/> 
+                    </div>
+                </div>
+              <div class="row hidden-xs hidden-sm">
+                	<div class="col-md-1"><img src="img/9.11.jpg" class="img-responsive"/></div>
+                    <div class="col-md-1"><img src="img/9.12.jpg" class="img-responsive"/></div>
+                    <div class="col-md-1"><img src="img/9.13.jpg" class="img-responsive"/></div>
+                    <div class="col-md-1"><img src="img/9.14.jpg" class="img-responsive"/></div>
+                    <div class="col-md-1"><img src="img/9.15.jpg" class="img-responsive"/></div>
+                    <div class="col-md-1"><img src="img/9.16.jpg" class="img-responsive"/></div>
+                    <div class="col-md-1"><img src="img/9.17.jpg" class="img-responsive"/></div>
+                    <div class="col-md-1"><img src="img/9.18.jpg" class="img-responsive"/></div>
+                    <div class="col-md-1"><img src="img/9.19.jpg" class="img-responsive"/></div>
+                    <div class="col-md-1"><img src="img/9.20.jpg" class="img-responsive"/></div>
+                    <div class="col-md-1"><img src="img/9.21.jpg" class="img-responsive"/></div>
+                    <div class="col-md-1"><img src="img/9.22.jpg" class="img-responsive"/></div>
+              </div>
+            </div>
+        </div>        
+        
+        <footer id="name5">
+            <div class="col-md-12 zn-xian"></div>
+        	<div class="row hidden-xs">
+          		<div class="col-md-10 col-md-push-1 zn">
+                	<ul class="nav nav-justified zn-dh1">
+                    	<li>购物指南
+                        	<ul class="nav nav-stack zn-dh2">
+                            	<li>购物流程</li>
+                                <li>会员介绍</li>
+                                <li>生活旅行</li>
+                                <li>常见问题</li>
+                                <li>大家电</li>
+                                <li>联系客服</li>
+                            </ul>
+                        </li>
+                        <li>配送方式
+                        	<ul class="nav nav-stack zn-dh2">
+                            	<li>上门自提</li>
+                                <li>211限时达</li>
+                                <li>配送服务查询</li>
+                                <li>配送费收取标准</li>
+                                <li>海外配送</li>
+                            </ul>
+                        </li>
+                        <li>支付方式
+                        	<ul class="nav nav-stack zn-dh2">
+                            	<li>货到付款</li>
+                                <li>在线支付</li>
+                                <li>分期付款</li>
+                                <li>公司转账</li>
+                            </ul>
+                        </li>
+                        <li>售后服务
+                        	<ul class="nav nav-stack zn-dh2">
+                            	<li>售后政策</li>
+                                <li>价格保护</li>
+                                <li>退款说明</li>
+                                <li>返修/退换货</li>
+                                <li>取消订单</li>
+                            </ul>
+                        </li>
+                        <li>特色服务
+                        	<ul class="nav nav-stack zn-dh2">
+                            	<li>夺宝岛</li>
+                                <li>DIY装机</li>
+                                <li>延保服务</li>
+                                <li>E卡</li>
+                                <li>通信</li>
+                                <li>京鱼座智能</li>
+                            </ul>
+                        </li>
+                        <li>自营覆盖区县
+                        	<ul class="nav nav-stack zn-dh3">
+                            	<li>本店已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</li>
+                                <li class="text-right">查看详情 ></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                        
+            <div class="xia-xian2 col-md-8 col-md-push-2"></div> 
+            
+             <div class="row hidden-xs">
+          		<div class="col-md-10 col-md-push-1 yj">
+                	<div class="col-md-12">
+                    	<ul class="nav navbar nav-justified yj-dh">
+                        	<li>关于我们</li>
+                            <li>联系我们</li>
+                            <li>联系客服</li>
+                            <li>合作招商</li>
+                            <li>营销中心</li>
+                            <li>手机买买</li>
+                            <li>友情链接</li>
+                            <li>销售联盟</li>
+                            <li>社区活动</li>
+                            <li>风险监测</li>
+                            <li>隐私政策</li>
+                            <li>公益活动</li>
+                            <li>Media & IR</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-8 col-md-push-2 yj-tu hidden-xs">
+                    	<ul class="nav nav-justified navbar">
+                        	<li><img src="img/4.25.jpg" class="img-responsive" width="125" height="41" /></li>
+                            <li><img src="img/4.26.png" class="img-responsive" width="125" height="41" /></li>
+                            <li><img src="img/4.27.png" class="img-responsive" width="125" height="41" /></li>
+                            <li><img src="img/4.28.png" class="img-responsive" width="125" height="41" /></li>
+                            <li><img src="img/4.29.png" class="img-responsive" width="125" height="41" /></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>   
+             
+             <div class="yj-mo">
+             	<div class="yj-bq">© 版权所有 : 18软件6班1830605陈博论</div>
+        		<div class="yj-lx"><div class="yj-qq">QQ:2722936255</div>联系我们 ▶</div>
+             </div>
+               
+       </footer>   
+         
+          
+               
+</body>
+</html>

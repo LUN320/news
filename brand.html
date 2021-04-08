@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+@import url("css/bootstrap.css");
+@import url("css/Mycss.css");
+@import url("css/Mycss2.css");
+</style>
+<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top nav-bg">
+         	<div class="container-fluid">
+            	<div class="row">
+                	<div class="col-md-1">
+                   	  <div class="navbar-header">
+                       	<button class="navbar-toggle nav-bg2" data-toggle="collapse" data-target="#myNavbar">
+                            	<span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                                
+                            </button>
+                          <a class="navbar-brand"><img src="img/loge.jpg" class="img-responsive" width="90px"/></a>
+                        </div>
+                    </div>
+                    <div class="col-md-11">
+                    	<div id="myNavbar" class="collapse navbar-collapse row">
+                        	<div class="col-md-7">
+                            	<ul class="nav navbar nav-justified nav-wezi">
+                                	<li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                                    <li><a href="brand.html">品牌闪购</a></li>
+                                    <li><a href="electrical.html">平价家电</a></li>
+                                    <li><a href="#">主题超市</a></li>
+                                    <li><a href="#">热点资讯</a></li>
+                                    <li class="dropdown">                               
+                                      <a class="dropdown-toggle" data-toggle="dropdown">更多
+                                        <span class="caret"></span>
+                                      </a>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="#">联系我们</a></li>
+                                        <li><a href="#">在线客服</a></li>
+                                        <li><a href="#">加入会员</a></li>
+                                      </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 hidden-sm hidden-xs nav-top">
+								<div class="input-group">
+                                	<input type="text" class="form-control">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button">搜索</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-2 hidden-sm hidden-xs nav-top">
+                            	<button class="btn btn-primary" data-toggle="modal" data-target="#mymodal">登录</button>
+                        		<button class="btn btn-primary" >注册</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </nav>
+           
+        <div id="mymodal" class="modal fade" dtaa-backdrop="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">登录买买买账号</h4>
+                    </div>
+                    <div class="media-body">
+                        <form action="#">
+                            <div  class="myMP col-md-10 col-md-offset-1">
+                                <input class="form-control" type="text" placeholder="手机/邮箱/用户名"/>
+                            </div>
+                            <div class="myMP col-md-10 col-md-offset-1">
+                                <input class="form-control" type="text" placeholder="密码"/>
+                            </div>
+                            <div class="myMP col-md-10 col-md-offset-1">
+                                <input type="checkbox" />下次自动登录
+                            </div>
+                            <div class="myB col-md-12">
+                                <input class="btn btn-primary form-control" type="submit" value="登录"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
+         </div>
+         
+         <div class="row hidden-xs hidden-sm">
+   		   <div class="col-md-10 col-xs-6 col-xs-push-1 ppfl">
+       	     <div class="row">
+                	<div class="col-md-1 ppfl-dp">
+                    	<div class="ppfl-dp-tu">
+                        	<img src="img/1.2.png"/>
+                        </div>
+                        <div class="ppfl-dp-wz">著名品牌</div>
+                    </div>
+               <div class="col-md-11 ppfl-mz">
+						<div class="ppfl-mz-kuang">李宁</div>
+                        <div class="ppfl-mz-kuang-xian"></div>
+                        <div class="ppfl-mz-kuang">安踏</div>
+                        <div class="ppfl-mz-kuang-xian"></div>
+                        <div class="ppfl-mz-kuang">匹克</div>
+                        <div class="ppfl-mz-kuang-xian"></div>
+                        <div class="ppfl-mz-kuang">鸿星尔克</div>
+                        <div class="ppfl-mz-kuang-xian"></div>
+                        <div class="ppfl-mz-kuang">特步</div>
+                        <div class="ppfl-mz-kuang-xian"></div>
+                        <div class="ppfl-mz-kuang">NIKE</div>
+                        <div class="ppfl-mz-kuang-xian"></div>
+                        <div class="ppfl-mz-kuang">Adidas</div>
+                        <div class="ppfl-mz-kuang-xian"></div>
+                        <div class="ppfl-mz-kuang">美的</div>
+                        <div class="ppfl-mz-kuang-xian"></div>
+                        <div class="ppfl-mz-kuang">华为</div>
+                        <div class="ppfl-mz-kuang-xian"></div>
+                        <div class="ppfl-mz-kuang">小米</div>
+                        <div class="ppfl-mz-kuang-xian"></div>
+                        <div class="ppfl-mz-kuang">香奈儿</div>
+                        <div class="ppfl-mz-kuang-xian"></div>
+                        <div class="ppfl-mz-kuang">LV包包</div>
+                    </div>
+             </div>
+            	<div class="row col-md-12 ppfl-xiatu"><img src="img/0.jpg" class="img-responsive img-rounded" width="1620" height="90" /></div>
+           </div>
+         </div>  
+         
+         
+          <div class="row">
+   		  	<div class="col-md-10 col-xs-6 col-xs-push-1">
+            	<div class="row">
+                      <div class="col-md-6 jxpp-zx"><span>品牌精选</span></div>
+                      <div class="col-md-1 col-md-offset-5 jxzt-gengduo hidden-xs hidden-sm">更多 >></div>
+                 </div>
+                 <div class="row xia-xian3"></div>   
+            </div>
+          </div>
+          
+          <div class="row">
+   		  	<div class="col-md-8 col-xs-offset-1 jxpp-zuo">
+            	<div class="jxpp-zuo-tu-kuang">
+                	<div class="jxpp-zuo-dtu"><img src="img/5.4.png"/></div>
+                    <div class="jxpp-zuo-xtu"><img src="img/5.2.png"/></div>
+                    <div class="jxpp-zuo-xtu"><img src="img/5.3.png"/></div>
+                    <div class="jxpp-zuo-xtu"><img src="img/5.5.png"/></div>
+              </div>
+                <div class="jxpp-zuo-tu-kuang">
+                	<div class="jxpp-zuo-xtu"><img src="img/5.11.png"/></div>
+                    <div class="jxpp-zuo-xtu"><img src="img/5.7.png"/></div>
+                    <div class="jxpp-zuo-xtu"><img src="img/5.8.png"/></div>
+                    <div class="jxpp-zuo-xtu"><img src="img/5.9.png"/></div>
+                    <div class="jxpp-zuo-xtu"><img src="img/5.10.png"/></div>
+                </div>
+                <div class="jxpp-zuo-tu-kuang">
+                	<div class="jxpp-zuo-xtu"><img src="img/5.12.png"/></div>
+                    <div class="jxpp-zuo-xtu"><img src="img/5.13.png"/></div>
+                    <div class="jxpp-zuo-xtu"><img src="img/5.14.png"/></div>
+                    <div class="jxpp-zuo-xtu"><img src="img/5.15.png"/></div>
+                    <div class="jxpp-zuo-xtu"><img src="img/5.16.png"/></div>
+                </div>
+            </div>
+            <div class="col-md-2 jxpp-you hidden-xs hidden-sm">
+            	<div class="jxpp-you-tu1"><img src="img/5.17.jpg"/></div>
+                <div class="jxpp-you-tu2"><img src="img/5.18.png"/></div>
+            </div>
+          </div>
+          
+                    
+          <div class="row">
+   		  	<div class="col-md-10 col-xs-6 col-xs-push-1">
+            	<div class="row">
+                      <div class="col-md-6 jxpp-zx"><span>限时秒杀</span></div>
+                      <div class="col-md-1 col-md-offset-5 jxzt-gengduo hidden-xs hidden-sm">更多 >></div>
+                 </div>
+                 <div class="row xia-xian3"></div>   
+            </div>
+          </div>
+          
+          <div class="row">
+   		  	<div class="col-md-10 col-sm-6 col-xs-push-1 xsms">
+            	<div class="col-md-3 xsms-js-kuang hidden-xs hidden-sm">
+                	<div class="se-kl">
+                        <div class="se-cn">倒计时</div>
+                        <div class="se-en">限时秒杀</div>
+                        <i class="se-io"></i>
+                        <div class="se-info">距离结束还剩</div>
+                        <div class="se-count">
+                            <div class="se-day"></div>
+                            <div class="se-hour"><span class="se-txt">00</span></div>
+                            <div class="se-min"><span class="se-txt">00</span></div>
+                            <div class="se-sec"><span class="se-txt">00</span></div>
+                       </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-md-9 col-sm-12 col-xs-12 xsms-you">
+                	
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                	 <div  class="carousel-inner">
+                     	<div class="item active">
+                   	    	 <div class="xsms-you-kuang">
+                           	   <div class="xsms-you-tu">
+                                	<div class="xsms-you-tu-top"><img src="img/6.1.jpg"/></div>
+                                    <div class="xsms-you-tu-zhong">【中华特色】六安馆</div>
+                                    <div class="xsms-you-tu-xia">¥3.99<span>¥16.9</span></div>	
+                               </div>
+                                <div class="xsms-you-tu">
+                                	<div class="xsms-you-tu-top"><img src="img/6.2.jpg"/></div>
+                                    <div class="xsms-you-tu-zhong">【口罩48小时发】口罩</div>
+                                    <div class="xsms-you-tu-xia">¥15.8<span>¥35</span></div>	
+                                </div>
+                                <div class="xsms-you-tu">
+                                	<div class="xsms-you-tu-top"><img src="img/6.3.jpg"/></div>
+                                    <div class="xsms-you-tu-zhong">【中华特色】宜宾馆 四川</div>
+                                    <div class="xsms-you-tu-xia">¥1.79<span>¥15.9</span></div>	
+                                </div>
+                                <div class="xsms-you-tu hidden-xs hidden-sm">
+                                	<div class="xsms-you-tu-top"><img src="img/6.4.jpg"/></div>
+                                    <div class="xsms-you-tu-zhong">【3件起售】薯香记 广西</div>
+                                    <div class="xsms-you-tu-xia">¥5.9<span>¥29.9</span></div>	
+                                </div>
+                             </div>
+                        </div>
+                        <div class="item">
+                   	    	<div class="xsms-you-kuang">
+                            	<div class="xsms-you-tu">
+                                	<div class="xsms-you-tu-top"><img src="img/6.5.jpg"/></div>
+                                    <div class="xsms-you-tu-zhong">薯家上品 云南</div>
+                                    <div class="xsms-you-tu-xia">¥6.8<span>¥29.9</span></div>	
+                               </div>
+                                <div class="xsms-you-tu">
+                                	<div class="xsms-you-tu-top"><img src="img/6.7.jpg"/></div>
+                                    <div class="xsms-you-tu-zhong">薯家上品 广西百香果</div>
+                                    <div class="xsms-you-tu-xia">¥8.8<span>¥29.9</span></div>	
+                                </div>
+                                <div class="xsms-you-tu">
+                                	<div class="xsms-you-tu-top"><img src="img/6.6.jpg"/></div>
+                                    <div class="xsms-you-tu-zhong">初愫Gonear5双装</div>
+                                    <div class="xsms-you-tu-xia">¥8.8<span>¥29</span></div>	
+                                </div>
+                                <div class="xsms-you-tu hidden-xs hidden-sm">
+                                	<div class="xsms-you-tu-top"><img src="img/6.8.jpg"/></div>
+                                    <div class="xsms-you-tu-zhong">奥美园烤馍片500g饼干</div>
+                                    <div class="xsms-you-tu-xia">¥10.1</div>	
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                   	    	<div class="xsms-you-kuang">
+                            	<div class="xsms-you-tu">
+                                	<div class="xsms-you-tu-top"><img src="img/6.9.jpg"/></div>
+                                    <div class="xsms-you-tu-zhong">纤净系列抽取式面巾纸</div>
+                                    <div class="xsms-you-tu-xia">¥1.1<span>¥5.9</span></div>	
+                               </div>
+                                <div class="xsms-you-tu">
+                                	<div class="xsms-you-tu-top"><img src="img/6.10.jpg"/></div>
+                                    <div class="xsms-you-tu-zhong">【1支装】滋润护手霜</div>
+                                    <div class="xsms-you-tu-xia">¥2.99<span>¥29.9</span></div>	
+                                </div>
+                                <div class="xsms-you-tu">
+                                	<div class="xsms-you-tu-top"><img src="img/6.11.jpg"/></div>
+                                    <div class="xsms-you-tu-zhong">欣雅妆氨基酸洗发水</div>
+                                    <div class="xsms-you-tu-xia">¥6.9<span>¥59.9</span></div>	
+                                </div>
+                                <div class="xsms-you-tu hidden-xs hidden-sm">
+                                	<div class="xsms-you-tu-top"><img src="img/6.12.jpg"/></div>
+                                    <div class="xsms-you-tu-zhong">泊泉雅祛黑头 T区面膜膏</div>
+                                    <div class="xsms-you-tu-xia">¥5.9<span>¥19.9</span></div>	
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+					
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                       <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                       <span class="sr-only">Next</span>
+                    </a>
+                    
+                </div>
+            </div>
+          </div>
+          
+          
+          <div class="row">
+   		  	<div class="col-md-10 col-xs-6 col-xs-push-1">
+            	<div class="row">
+                      <div class="col-md-6 jxpp-zx"><span>精选专题</span></div>
+                      <div class="col-md-1 col-md-offset-5 jxzt-gengduo hidden-xs hidden-sm">更多 >></div>
+                 </div>
+                 <div class="row xia-xian3"></div>   
+            </div>
+          </div>
+          
+           <div class="row">
+		<div class="col-md-10 col-xs-10 col-xs-push-1 jxzt">
+        	<div class="row">
+            	<diV class="col-md-6 col-sm-6 col-xs-6 jxzt-kuang">
+                	<div class="row">
+                    	<div class="col-md-12 jxzt-top"><img src="img/6.13.jpg"/></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-md-4 jxzt-xia">
+                        	<div class="row">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-tu"><img src="img/6.15.jpg"/></div>
+                            </div>
+                            <div class="row hidden-xs hidden-sm">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-zhong-wz">佑诗2020新款女羊剪绒皮草大衣短款水貂领复合皮毛一体外套小个子</div>
+                            </div>
+                            <div class="row hidden-xs hidden-sm">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-xia-wz">￥434.5<span>￥1499</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 jxzt-xia">
+                        	<div class="row">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-tu"><img src="img/6.16.jpg"/></div>
+                            </div>
+                            <div class="row hidden-xs hidden-sm">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-zhong-wz">佑诗2020冬新款女复合皮毛一体大衣短款翻领羊羔毛羊剪绒皮草外套</div>
+                            </div>
+                            <div class="row hidden-xs hidden-sm">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-xia-wz">￥289<span>￥1099</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 hidden-xs hidden-sm jxzt-xia">
+                        	<div class="row">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-tu"><img src="img/6.20.jpg"/></div>
+                            </div>
+                            <div class="row">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-zhong-wz">女神运动夏气质小个子新款时尚女装套裤套装</div>
+                            </div>
+                            <div class="row">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-xia-wz">￥98.00<span>￥199</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </diV>
+                <diV class="col-md-6 col-sm-6 col-xs-6 jxzt-kuang">
+                	<div class="row">
+                    	<div class="col-md-12 jxzt-top"><img src="img/6.14.jpg"/></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-md-4 jxzt-xia">
+                        	<div class="row">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-tu"><img src="img/6.17.jpg"/></div>
+                            </div>
+                            <div class="row hidden-xs hidden-sm">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-zhong-wz">【104.7元抢600件，抢完恢复349元】正品新款皮尔卡丹秋冬牛仔裤</div>
+                            </div>
+                            <div class="row hidden-xs hidden-sm">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-xia-wz">￥104.7<span>￥889</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 jxzt-xia">
+                        	<div class="row">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-tu"><img src="img/6.18.jpg"/></div>
+                            </div>
+                            <div class="row hidden-xs hidden-sm">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-zhong-wz">【92.7元抢800件，抢完恢复309元】皮尔卡丹2019新款牛仔裤</div>
+                            </div>
+                            <div class="row hidden-xs hidden-sm">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-xia-wz">￥92.7<span>￥889</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 hidden-xs hidden-sm jxzt-xia">
+                        	<div class="row">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-tu"><img src="img/6.19.jpg"/></div>
+                            </div>
+                            <div class="row">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-zhong-wz">七匹狼男士牛仔裤秋季新款青年商务休闲宽松直筒长裤潮正品男装</div>
+                            </div>
+                            <div class="row">
+                            	<div class="col-md-10 col-md-push-1 jxzt-xia-xia-wz">￥288<span>￥399</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </diV>
+            </div>
+        </div>
+     </div>
+           
+           <div class="row">
+   		  	<div class="col-md-10 col-xs-6 col-xs-push-1">
+            	<div class="row">
+                      <div class="col-md-6 jxpp-zx"><span>猜你喜欢</span></div>
+                      <div class="col-md-1 col-md-offset-5 jxzt-gengduo hidden-xs hidden-sm">更多 >></div>
+                 </div>
+                 <div class="row xia-xian3"></div>   
+            </div>
+          </div>
+          
+          <div class="row">
+         	<div class="col-md-10 col-md-offset-1 cnxh">
+            	<div class="col-md-3 hidden-xs hidden-sm">
+                	<div id="biaoqian">
+                        <div id="biaoqian_name">
+                            <div class="biaoqian_name_1">热门标签 </div>
+                            <div class="biaoqian_name_2">所有热门标签»</div>
+                        </div>
+                        <div class="biaoqian_fenlei">
+                            <div class="biaoqian_top">男士</div>
+                            <ul class="nav nav-justified">
+                            	<li>休闲鞋</li>
+                                <li>篮球鞋</li>
+                                <li>衬衫</li>
+                                <li>短裤</li>
+                                <li>短袖</li>
+                            </ul>
+                            <ul class="nav nav-justified">
+                            	<li>夏装</li>
+                                <li>运动套装</li>
+                                <li>西装</li>
+                                <li>篮球袜</li>
+                                <li>更多</li>
+                            </ul>
+                        </div>
+                        <div class="biaoqian_fenlei">
+                            <div class="biaoqian_top">女士</div>
+                            <ul class="nav nav-justified">
+                            	<li>高跟鞋</li>
+                                <li>长袖</li>
+                                <li>连衣裙</li>
+                                <li>牛仔短裤</li>
+                                <li>跑步鞋</li>
+                            </ul>
+                           <ul class="nav nav-justified">
+                            	<li>冬装</li>
+                                <li>内衣</li>
+                                <li>半身裙</li>
+                                <li>仙连衣裙</li>
+                                <li>更多</li>
+                            </ul>
+                        </div>
+                        <div class="biaoqian_fenlei">
+                            <div class="biaoqian_top">手机</div>
+                            <ul class="nav nav-justified">
+                            	<li>华为</li>
+                                <li>OPPO</li>
+                                <li>vivo</li>
+                                <li>小米</li>
+                                <li>荣耀</li>
+                            </ul>
+                            <ul class="nav nav-justified">
+                            	<li>苹果</li>
+                                <li>三星</li>
+                                <li>诺基亚</li>
+                                <li>纽曼</li>
+                                <li>更多</li>
+                            </ul>
+                        </div>
+                        <div class="biaoqian_fenlei">
+                            <div class="biaoqian_top">生活家电</div>
+                            <ul class="nav nav-justified">
+                            	<li>电磁灶</li>
+                                <li>饮水机</li>
+                                <li>净水器</li>
+                                <li>电视</li>
+                                <li>制氧机</li>
+                            </ul>
+                            <ul class="nav nav-justified">
+                            	<li>美的空调</li>
+                                <li>风扇</li>
+                                <li>电子称</li>
+                                <li>电脑</li>
+                                <li>更多</li>
+                            </ul>
+                        </div>
+                        
+                        
+                        
+                     </div>  
+                </div>
+                <div class="col-md-9 col-xs-12 col-sm-12">
+                	<div class="container-fluid">
+    					<div class="row">
+                        	<div class="panel-group">                            	
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                      <a href="#collapseOne" data-toggle="collapse">男士套装<span class="glyphicon glyphicon-chevron-up  rightspan"></span></a>                               			</h4>
+                                    </div>
+                                    <div class="panel-collapse collapse in" id="collapseOne">
+                                        <div class="panel-body">
+                                            <div class="col-md-4">
+                                            	<div class="thumbnail">
+                                                	<img src="img/8.4.jpg"/>                                          	
+                                                    <h5>弹力衬衫正装青年修身型男休闲商务职业衬衣</h5>
+                                                    <p class="cnxh-wz1">￥ 69.00<span>￥269</span></p>                               
+                                               </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                            	<div class="thumbnail">
+                                                	<img src="img/8.5.jpg"/>                                          	
+                                                    <h5>李宁跑步鞋男鞋官方正品新款春季网面轻便减</h5>
+                                                    <p class="cnxh-wz1">￥ 158.00<span>￥299</span></p>                               
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                            	<div class="thumbnail">
+                                                	<img src="img/8.6.jpg"/>                                          	
+                                                    <h5>裤子男夏季超薄款冰丝休闲长裤潮流九分裤</h5>
+                                                    <p class="cnxh-wz1">￥ 59.00<span>￥159.00</span></p>                               
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                      <a href="#collapsetwo" data-toggle="collapse">女士<span class="glyphicon glyphicon-chevron-up  rightspan"></span></a>                               			</h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="collapsetwo">
+                                        <div class="panel-body">
+                                            <div class="col-md-4">
+                                            	<div class="thumbnail">
+                                                	<img src="img/8.7.jpg"/>                                          	
+                                                    <h5>2.12有货实拍2019网纱亮片星星韩版</h5>
+                                                    <p class="cnxh-wz1">￥ 99.00<span>￥239.00</span></p>                               
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                            	<div class="thumbnail">
+                                                	<img src="img/8.8.jpg"/>                                          	
+                                                    <h5>韩版衬衫女韩范气质蝴蝶结夏季薄款</h5>
+                                                    <p class="cnxh-wz1">￥ 100.00<span>￥236.00</span></p>                               
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                            	<div class="thumbnail">
+                                                	<img src="img/8.9.jpg"/>                                          	
+                                                    <h5>小雏菊小白鞋女2020夏季网面鞋</h5>
+                                                    <p class="cnxh-wz1">￥ 58.00<span>￥189.99</span></p>                               
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                     <a href="#collapsethree" data-toggle="collapse">手机<span class="glyphicon glyphicon-chevron-up  rightspan"></span></a>                               			</h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="collapsethree">
+                                        <div class="panel-body">
+                                            <div class="col-md-4">
+                                            	<div class="thumbnail">
+                                                	<img src="img/8.10.jpg"/>                                          	
+                                                    <h5>领200元券24期免息 正品华为nova 6</h5>
+                                                    <p class="cnxh-wz1">￥ ￥2299.00<span>￥2399</span></p>                               
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                            	<div class="thumbnail">
+                                                	<img src="img/8.11.png"/>                                          	
+                                                    <h5>红米note8 智能手机 redmi 全面屏pro</h5>
+                                                    <p class="cnxh-wz1">￥ 849.00<span>￥999.00</span></p>                               
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                            	<div class="thumbnail">
+                                                	<img src="img/8.12.jpg"/>                                          	
+                                                    <h5>分期免息苹果iPhoneXR苹果x xs </h5>
+                                                    <p class="cnxh-wz1">￥ 3000.00<span>￥4000.00</span></p>                               
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                      <a href="#collapsefour" data-toggle="collapse">生活家电<span class="glyphicon glyphicon-chevron-up  rightspan"></span></a>                               			</h4>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="collapsefour">
+                                        <div class="panel-body">
+                                            <div class="col-md-4">
+                                            	<div class="thumbnail">
+                                                	<img src="img/8.13.jpg"/>                                          	
+                                                    <h5>进口品质!能看家的扫拖一体扫地机器人</h5>
+                                                    <p class="cnxh-wz1">￥ 1999.00<span>￥2599</span></p>                               
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                            	<div class="thumbnail">
+                                                	<img src="img/8.14.jpg"/>                                          	
+                                                    <h5>韩夫人无线吸尘器家用手持式超静音小</h5>
+                                                    <p class="cnxh-wz1">￥ 269.00<span>￥2999</span></p>                               
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                            	<div class="thumbnail">
+                                                	<img src="img/8.15.jpg"/>                                          	
+                                                    <h5>多功能家电深度清洗高温蒸汽机</h5>
+                                                    <p class="cnxh-wz1">￥ 558.00<span>￥1068</span></p>                               
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                                
+                            </div>
+                        </div>
+                    </div>   
+                </div>                
+            </div>
+        </div> 
+           
+           <footer>
+            <div class="col-md-12 zn-xian"></div>
+        	<div class="row hidden-xs hidden-sm">
+          		<div class="col-md-10 col-md-push-1 zn">
+                	<ul class="nav nav-justified zn-dh1">
+                    	<li>购物指南
+                        	<ul class="nav nav-stack zn-dh2">
+                            	<li>购物流程</li>
+                                <li>会员介绍</li>
+                                <li>生活旅行</li>
+                                <li>常见问题</li>
+                                <li>大家电</li>
+                                <li>联系客服</li>
+                            </ul>
+                        </li>
+                        <li>配送方式
+                        	<ul class="nav nav-stack zn-dh2">
+                            	<li>上门自提</li>
+                                <li>211限时达</li>
+                                <li>配送服务查询</li>
+                                <li>配送费收取标准</li>
+                                <li>海外配送</li>
+                            </ul>
+                        </li>
+                        <li>支付方式
+                        	<ul class="nav nav-stack zn-dh2">
+                            	<li>货到付款</li>
+                                <li>在线支付</li>
+                                <li>分期付款</li>
+                                <li>公司转账</li>
+                            </ul>
+                        </li>
+                        <li>售后服务
+                        	<ul class="nav nav-stack zn-dh2">
+                            	<li>售后政策</li>
+                                <li>价格保护</li>
+                                <li>退款说明</li>
+                                <li>返修/退换货</li>
+                                <li>取消订单</li>
+                            </ul>
+                        </li>
+                        <li>特色服务
+                        	<ul class="nav nav-stack zn-dh2">
+                            	<li>夺宝岛</li>
+                                <li>DIY装机</li>
+                                <li>延保服务</li>
+                                <li>E卡</li>
+                                <li>通信</li>
+                                <li>京鱼座智能</li>
+                            </ul>
+                        </li>
+                        <li>自营覆盖区县
+                        	<ul class="nav nav-stack zn-dh3">
+                            	<li>本店已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</li>
+                                <li class="text-right">查看详情 ></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                        
+            <div class="xia-xian2 col-md-8 col-md-push-2"></div> 
+            
+             <div class="row hidden-sm hidden-xs hidden-sm">
+          		<div class="col-md-10 col-md-push-1 yj">
+                	<div class="col-md-12">
+                    	<ul class="nav navbar nav-justified yj-dh">
+                        	<li>关于我们</li>
+                            <li>联系我们</li>
+                            <li>联系客服</li>
+                            <li>合作招商</li>
+                            <li>营销中心</li>
+                            <li>手机买买</li>
+                            <li>友情链接</li>
+                            <li>销售联盟</li>
+                            <li>社区活动</li>
+                            <li>风险监测</li>
+                            <li>隐私政策</li>
+                            <li>公益活动</li>
+                            <li>Media & IR</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-8 col-md-push-2 yj-tu hidden-sm">
+                    	<ul class="nav nav-justified navbar">
+                        	<li><img src="img/4.25.jpg" class="img-responsive" width="125" height="41" /></li>
+                            <li><img src="img/4.26.png" class="img-responsive" width="125" height="41" /></li>
+                            <li><img src="img/4.27.png" class="img-responsive" width="125" height="41" /></li>
+                            <li><img src="img/4.28.png" class="img-responsive" width="125" height="41" /></li>
+                            <li><img src="img/4.29.png" class="img-responsive" width="125" height="41" /></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>   
+             
+             <div class="yj-mo">
+             	<div class="yj-bq">© 版权所有 : 18软件6班1830605陈博论</div>
+        		<div class="yj-lx"><div class="yj-qq">QQ:2722936255</div>联系我们 ▶</div>
+             </div>
+               
+       </footer>  
+
+<script language="javascript">
+$(function(){
+
+      $(".panel-heading").click(function(e){
+
+        /*切换折叠指示图标*/
+
+        $(this).find("span").toggleClass("glyphicon-chevron-down");
+
+        $(this).find("span").toggleClass("glyphicon-chevron-up");
+
+      });
+
+    });
+</script>           
+<script type="text/javascript">
+			$(document).ready(function () {
+			var oDate = new Date();
+			var nowTime = oDate.getTime(); //现在的毫秒数
+			oDate.setDate(oDate.getDate() + 1); // 设定截止时间为第二天
+			var targetDate = new Date(oDate.toLocaleDateString());
+			run(targetDate);
+		});
+	
+		function run(enddate) {
+			getDate(enddate);
+			setInterval("getDate('" + enddate + "')", 500);
+		}
+	
+		function getDate(enddate) {
+			var oDate = new Date(); //获取日期对象
+	
+			var nowTime = oDate.getTime(); //现在的毫秒数
+			var enddate = new Date(enddate);
+			var targetTime = enddate.getTime(); // 截止时间的毫秒数
+			var second = Math.floor((targetTime - nowTime) / 1000); //截止时间距离现在的秒数
+	
+			var day = Math.floor(second / 24 * 60 * 60); //整数部分代表的是天；一天有24*60*60=86400秒 ；
+			second = second % 86400; //余数代表剩下的秒数；
+			var hour = Math.floor(second / 3600); //整数部分代表小时；
+			second %= 3600; //余数代表 剩下的秒数；
+			var minute = Math.floor(second / 60);
+			second %= 60;
+			var spanH = $('.se-txt')[0];
+			var spanM = $('.se-txt')[1];
+			var spanS = $('.se-txt')[2];
+	
+			spanH.innerHTML = tow(hour);
+			spanM.innerHTML = tow(minute);
+			spanS.innerHTML = tow(second);
+		}
+	
+		function tow(n) {
+			return n >= 0 && n < 10 ? '0' + n : '' + n;
+		}
+</script>
+</body>
+</html>
